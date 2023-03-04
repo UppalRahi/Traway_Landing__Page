@@ -336,6 +336,7 @@ It's too black...  */
   display: grid;
   place-content: center;
   margin-top: 2rem;
+  overflow-x: hidden;
 }
 .common-heading-2 {
   font-size: 2.638rem;
@@ -670,155 +671,157 @@ It's too black...  */
 }
 
 /* FOOTER */
+/* FOOTER */
 
 .master-footer {
-  background: linear-gradient(82.31deg, #000000 -2.55%, #1a1a1a 91.76%);
-  margin-top: 15rem;
-  padding-top: 50px;
-}
-.companyName {
-  text-align: center;
-  width: 8.875rem;
-  margin-left: 4.375rem;
-}
-.companyName--backed {
-  color: #2a70fa;
-  font-weight: 500;
-  margin-bottom: 0;
-}
-#companyName--traway {
-  margin-top: 20px;
-}
-/* trying SVG animation  */
-#SettingSun {
-  fill: #1b1b1b;
-}
-#MountainOutline {
-  fill: #252525;
-}
-#MountainSnow {
-  fill: #1d1d1d;
-}
-#GreenGrass {
-  fill: #101010;
-}
-#PurpleHair {
-  fill: #363636;
-}
-#Road {
-  fill: #454545;
-}
-#TheDarkHorses {
-  fill: #262626;
-}
-#WhiteDress {
-  fill: #363636;
-}
-#SettingSun,
-#MountainOutline,
-#MountainSnow,
-#GreenGrass,
-#PurpleHair,
-#Road,
-#TheDarkHorses,
-#WhiteDress {
-  transition: all 1s ease;
-}
-svg:hover #MountainOutline {
-  fill: #ffffff;
-}
-svg:hover #MountainSnow {
-  fill: #727272;
-}
-svg:hover #GreenGrass {
-  fill: #00703a;
-}
-svg:hover #WhiteDress {
-  fill: #ffffff;
-}
-svg:hover #PurpleHair {
-  fill: #5000b6;
-}
-svg:hover #Road {
-  fill: #ffffff;
-}
-svg:hover #TheDarkHorses {
-  fill: #225ac8;
-}
-svg:hover #SettingSun {
-  fill: #ffe600;
-  transform: translateY(-1.09rem);
-}
-
-.companyName {
-  grid-area: header;
-}
-.svgAnime {
-  grid-area: menu;
-}
-.support {
-  grid-area: main;
-}
-.product {
-  grid-area: right;
-}
-
-.master-footer {
-  display: grid;
-  grid-template-areas:
-    "header header header header"
-    "menu menu main right";
-  gap: 10px;
-}
-
-.support {
-  color: #444;
-  text-align: start;
-  font-weight: 7;
-  font-size: 2em;
-}
-.footer--nav--links {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-weight: 400;
-  font-size: 1.25rem;
-  padding-left: 0;
-}
-.footer--links {
-  text-decoration: none;
-  position: relative;
-  color: rgb(174, 174, 174);
-  padding: 0;
-  margin-bottom: 1rem;
-}
-
-.footer--links:hover {
-  color: white;
-}
-.product {
-  text-align: start;
-  color: #444;
-  font-weight: 700;
-  font-size: 2em;
-}
-
-@media (max-width: 42rem) {
+    background: linear-gradient(82.31deg, #000000 -2.55%, #1a1a1a 91.76%);
+    margin-top: 15rem;
+    padding-top: 50px;
+  }
+  .companyName {
+    text-align: center;
+  }
+  .companyName--backed {
+    color: #2a70fa;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  #companyName--traway {
+    margin-top: 1.375rem;
+  }
+  /* trying SVG animation  */
+  #SettingSun {
+    fill: #1b1b1b;
+  }
+  #MountainOutline {
+    fill: #252525;
+  }
+  #MountainSnow {
+    fill: #1d1d1d;
+  }
+  #GreenGrass {
+    fill: #101010;
+  }
+  #PurpleHair {
+    fill: #363636;
+  }
+  #Road {
+    fill: #454545;
+  }
+  #TheDarkHorses {
+    fill: #262626;
+  }
+  #WhiteDress {
+    fill: #363636;
+  }
+  #SettingSun,
+  #MountainOutline,
+  #MountainSnow,
+  #GreenGrass,
+  #PurpleHair,
+  #Road,
+  #TheDarkHorses,
+  #WhiteDress {
+    transition: all 1s ease;
+  }
+  svg:hover #MountainOutline {
+    fill: #ffffff;
+  }
+  svg:hover #MountainSnow {
+    fill: #727272;
+  }
+  svg:hover #GreenGrass {
+    fill: #00703a;
+  }
+  svg:hover #WhiteDress {
+    fill: #ffffff;
+  }
+  svg:hover #PurpleHair {
+    fill: #5000b6;
+  }
+  svg:hover #Road {
+    fill: #ffffff;
+  }
+  svg:hover #TheDarkHorses {
+    fill: #225ac8;
+  }
+  svg:hover #SettingSun {
+    fill: #ffe600;
+    transform: translateY(-1.09rem);
+  }
+  
+  .companyName {
+    grid-area: header;
+  }
+  .svgAnime {
+    grid-area: menu;
+  }
+  .support {
+    grid-area: main;
+  }
+  .product {
+    grid-area: right;
+  }
+  
   .master-footer {
-    height: 100%;
+    display: grid;
+    /* updated */
     grid-template-areas:
-      "header header "
-      " main main "
-      "right right"
-      "menu menu";
-    justify-content: center;
+      "header header main right"
+      "menu menu menu menu ";
+    gap: 10px;
   }
-
-  .support .product {
-    margin-left: 6rem;
+  .product,
+  .support {
+    color: #444;
+    font-size: 22px;
   }
-}
+  
+  .footer--nav--links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 1.25rem;
+    padding-left: 0;
+  }
+  .footer--links {
+    text-decoration: none;
+    position: relative;
+    color: rgb(174, 174, 174);
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .footer--links:hover {
+    color: white;
+  }
+  
+  @media (max-width: 42rem) {
+    .master-footer {
+      height: 100%;
+      grid-template-areas:
+        "header header "
+        " main main "
+        "right right"
+        "menu menu";
+      justify-content: center;
+    }
+    .support,
+    .product {
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 42rem) {
+    .companyName {
+      text-align: center;
+      width: 8.875rem;
+      margin-left: 4.375rem;
+    }
+  }
+  
 /* For support and contact us */
 
 /* TODO: Why mail the tickets looks better than meet the team... check the space betwen the svg and heading */
