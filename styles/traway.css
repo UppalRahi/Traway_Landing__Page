@@ -539,6 +539,8 @@ It's too black...  */
   display: flex;
   flex-direction: column;
   max-width: 15.8125rem;
+  justify-content: space-between;
+  height: 100%;
 }
 .card {
   padding: 1.1875rem 2.9375rem 1.1875rem 1.125rem;
@@ -593,7 +595,7 @@ It's too black...  */
   margin-top: 3rem;
 }
 #noor-sir {
-  width: 7.5625rem;
+  max-width: 10rem;
   height: 10.625rem;
   border-radius: 0.25rem;
   display: block;
