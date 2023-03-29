@@ -653,6 +653,10 @@ It's too black...  */
   gap: 21.44px;
   margin-left: 4px;
 }
+
+.sociallinks:hover {
+  filter: brightness(3.5);
+}
 .master-footer {
   background: linear-gradient(82.31deg, #000000 -2.55%, #1a1a1a 91.76%);
   margin-top: 15rem;
@@ -742,6 +746,10 @@ svg:hover #SettingSun {
   transform: translateY(-1.09rem);
 }
 
+.hoveraddress:hover {
+  color: white;
+}
+
 .companyName {
   grid-area: header;
 }
@@ -758,9 +766,15 @@ svg:hover #SettingSun {
   grid-area: find;
 }
 
+.findus ul {
+  display: flex;
+  flex-direction: column;
+}
+
 .findus li {
   color: rgb(174, 174, 174);
-  padding: 2px 0;
+  font-size: 18px;
+  margin-bottom: 6px;
 }
 
 .master-footer {
@@ -787,6 +801,16 @@ svg:hover #SettingSun {
   font-size: 1.25rem;
   padding-left: 0;
 }
+.hoveraddress {
+  text-decoration: none;
+  position: relative;
+  color: #9a9a9a;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.hoveraddress:hover #address--traway{
+  color: white;
+}
 .footer--links {
   text-decoration: none;
   position: relative;
@@ -799,8 +823,8 @@ svg:hover #SettingSun {
   color: white;
 }
 #address--traway {
-  width: 41%;
-  line-gap-override: 3px;
+  width: 38%;
+  font-size: 17px;
 }
 
 @media (max-width: 42rem) {
@@ -821,6 +845,9 @@ svg:hover #SettingSun {
   }
   .findus {
     margin-bottom: 3rem;
+  }
+  .companyName {
+    align-items: center;
   }
 }
 
@@ -906,6 +933,9 @@ svg:hover #SettingSun {
   }
   .description {
     width: 19.6975rem;
+  }
+  #address--traway {
+    width: auto;
   }
 
   .yash-rohit {
