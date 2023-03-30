@@ -824,6 +824,7 @@ svg:hover #SettingSun {
 }
 #address--traway {
   width: 38%;
+  line-height: 25px;
   font-size: 17px;
 }
 
