@@ -653,6 +653,9 @@ It's too black...  */
   gap: 21.44px;
   margin-left: 4px;
 }
+.youtubelogo {
+  padding-top: 5px;
+}
 
 .sociallinks:hover {
   filter: brightness(3.5);
@@ -808,7 +811,7 @@ svg:hover #SettingSun {
   padding: 0;
   margin-bottom: 1rem;
 }
-.hoveraddress:hover #address--traway{
+.hoveraddress:hover #address--traway {
   color: white;
 }
 .footer--links {
